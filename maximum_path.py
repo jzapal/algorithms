@@ -27,7 +27,6 @@ class TriangleTraveler:
 
     def move_down(self, triangle: List, current_level: int, current_position: int, path: List):
         path.append(triangle[current_level][current_position])
-        print(path)
         if current_level == len(triangle) - 1:
             if sum(path) > sum(self.max_path):
                 self.max_path = path
